@@ -84,3 +84,29 @@ puts "information".index('z') # => returns 'nil'
 # "clear" => Removes string content.
 
 puts "info".clear()
+
+age = 18
+puts "do this" if age == 18
+
+age1 = 120
+
+case age1
+when 0..18
+  puts "Study"
+when 18..60
+  puts "Job"
+when 60..100
+  puts "Retire"
+else 
+  puts "Dead"
+end
+
+# another way
+
+puts "English or Spanish"
+greetings = gets.chomp
+
+case greetings
+when "english" then puts "This is english"
+when "spanish" then puts "This is spanish"
+end
