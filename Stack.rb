@@ -23,7 +23,7 @@ class Stack
   end
 
   def is_empty?
-    @top == -1
+    return @top == -1
   end
 
   def peek
