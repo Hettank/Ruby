@@ -148,7 +148,7 @@ def account_menu(user_acc)
         acc.account_number == accNo
       }
       
-      if account
+      if account  
         puts "Enter Amount to Deposite:"
         amount = gets.chomp.to_i
         account.depositeMoney(amount)
