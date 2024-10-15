@@ -24,3 +24,6 @@ end
 
 puts test_proc
 puts test_lambda 
+
+puts lambda {}
+puts Proc.new {}

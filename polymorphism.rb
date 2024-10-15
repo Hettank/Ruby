@@ -6,13 +6,13 @@ end
 
 class Batter < Cricketer
   def role
-      puts "I am a batter"
+    puts "I am a batter"
   end
 end
 
 class Bowler < Cricketer
   def role
-      puts "I am a bowler"
+    puts "I am a bowler"
   end
 end
 

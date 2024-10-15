@@ -40,12 +40,12 @@ puts "olleh".reverse()
 
 puts "Hello, how are you?".split()
 
-# "reverse" => takes a strings and splits it into an array, then returns the array.
+# "split" => takes a strings and splits it into an array, then returns the array.
 
 
 puts "Soft Coding Solutions".chop()
 
-# "reverse" => method removes the last character of the string.
+# "chop" => method removes the last character of the string.
 
 vari = "Batman"
 

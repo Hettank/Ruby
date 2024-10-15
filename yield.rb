@@ -33,10 +33,15 @@ puts operation(4, 5) { |a, b| a + b } # passed a block to a method and done the 
 # *********************** Implicit Block *********************
 
 def calculation(a, b, &block) # &block is an explicit (named) parameter
+  # both the methods do the same work, below
   block.call(a, b)
+  yield(a, b)
  end
  
- puts calculation(5, 5) { |a, b| a + b } # this is an implicit block, => -- it is nameless and is not => passed as an explicit parameter.
+ puts calculation(5, 5) {
+  |a, b| 
+  a + b
+} # this is an implicit block, => -- it is nameless and is not => passed as an explicit parameter.
 
 # *********************** Explicit Block *********************
 

@@ -51,3 +51,46 @@ bank.transactions
 
 # puts Student.name
 # puts Student.surname
+puts "===================================="
+
+module A
+  def combine(first, last)
+    first + last
+  end
+end
+
+class Comb
+  include A
+  def combine(first, last)
+    if first.is_a?(String) || last.is_a?(String)
+      "#{first} #{last}"
+    else
+      super
+    end
+  end
+end
+
+comb = Comb.new
+puts comb.combine("Het", "Tank")
+puts comb.combine(3, 2)
+
+puts "============================================"
+
+class Person
+  def vice(name, age)
+    puts "#{name} just turned #{age} and wants to do something fun."
+  end
+end
+class Activities < Person
+  def vice(name, age)
+    super # sends all the argument to the parent class 'vice' method which we got from the child class vice name, age
+    super(name, age) # same as above
+    if age >= 21
+       puts "#{name} can drink."
+    else
+       puts "#{name} is too young to drink."
+    end
+  end
+end
+timmy = Activities.new
+timmy.vice("Lil' Timmy", 21)

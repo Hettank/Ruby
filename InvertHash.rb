@@ -1,4 +1,8 @@
-original = { "a" => 1, "b" => 2, "c" => 3 }
+original = {
+  "a" => 1,
+  "b" => 2,
+  "c" => 3
+}
 
 duplicate = {}
 

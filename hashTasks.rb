@@ -29,13 +29,16 @@ groupedBy = people.group_by { |person| person[:age] }
 
 inventory = {
   store1: {
-    items: ["apple", "banana", "orange"], location: "New York"
+    items: ["apple", "banana", "orange"],
+    location: "New York"
   },
   store2: {
-    items: ["pear", "peach", "plum"], location: "Los Angeles"
+    items: ["pear", "peach", "plum"],
+    location: "Los Angeles"
   },
   store3: {
-    items: ["cherry", "grape", "lemon"], location: "Chicago"
+    items: ["cherry", "grape", "lemon"],
+    location: "Chicago"
   }
 }
 

@@ -25,7 +25,7 @@ class Bike < Vehicle
   end
 
   def details
-    super # call the 'details' method of Vehicle class
+    super() # call the 'details' method of Vehicle class
     puts "Number of tyre: #{@number_of_tyre}"
   end
 end
